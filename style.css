@@ -1,0 +1,171 @@
+body{
+    background-color: #f2f2f2;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: "header header header""aside main main""footer footer footer";
+}
+header{
+    grid-area: header;
+    background-color: #ffffff;
+
+
+}
+aside{
+    grid-area: aside;
+    background-color: #f2f4f7;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+.container header .logo img{
+    border-radius: 50%;
+}
+.max-container{
+    display: flex;
+    align-items: center;
+}
+.input-box{
+    display: flex;
+    margin: 5px;
+    border: 1px solid #f2f4f7;
+    padding: 10px;
+    border-radius: 50px;
+    width: 32%;
+    background-color: #f2f4f7;
+    
+
+
+}
+.input-box input{
+    border: none;
+    outline: none;
+    background-color: #f2f4f7;
+}
+.icons{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+.icons :hover{
+    background-color:#f2f4f7 ;
+    padding: 10px;
+    width: 70px;
+    border-radius: 5px;
+     display: flex;
+     align-items: center;
+}
+ .rounded{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    position: absolute;
+    right: 0px;
+    margin-right: 20px;
+}
+.rounded img{
+    border-radius: 50%;
+    
+}
+.rounded .menu{
+    background-color: #f2f4f7;
+    padding: 5px;
+    border-radius: 50%;
+}
+.rounded .menu svg{
+    display: flex;
+    align-items: center;
+}
+.rounded .massage{
+    background-color: #f2f4f7;
+    padding: 5px;
+    border-radius: 50%;
+
+}
+aside{
+    background-color:#f2f2f2 ;
+}
+.aside-container{
+    
+    align-items: center;
+}
+.aside-container img {
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.aside-container .profile{
+    display: flex;
+    align-items: center;
+}
+.aside-container .meta{
+    display: flex;
+    align-items: center;
+}
+.aside-container .friend{
+    display: flex;
+    align-items: center;
+}
+.aside-container .memories{
+    display: flex;
+    align-items: center;
+}
+.aside-container .saved{
+    display: flex;
+    align-items: center;
+
+}
+.aside-container .groups{
+    display: flex;
+    align-items: center;
+}
+.aside-container .video{
+    display: flex;
+    align-items: center;
+}
+.aside-container .market{
+    display: flex;
+    align-items: center;
+}
+.aside-container .feed{
+    display: flex;
+    align-items: center;
+}
+.aside-container .event{
+    display: flex;
+    align-items: center;
+}
+.aside-container .manager{
+    display: flex;
+    align-items: center;
+}
+.aside-container .see{
+    display: flex;
+    
+    align-items: center;
+}
+.aside-container .see svg{
+    background-color: lightgray;
+    border-radius: 50%;
+}
+main{
+    display: flex;
+    align-items: center;
+}
+
+.box{
+    border: 1px solid black;
+    height: 150px;
+    width: 250px;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+}
