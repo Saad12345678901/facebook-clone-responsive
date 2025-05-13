@@ -1,29 +1,51 @@
-body{
-    background-color: #f2f2f2;
-}
-
-.container{
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
     display: grid;
-    grid-template-areas: "header header header""aside main main""footer footer footer";
-}
-header{
+    grid-template-areas:
+      "header header header"
+      "left main right";
+    background-color: #f0f2f5;
+    /* max-width: 1440  px; */
+    margin: auto;
+    font-size: large;
+    justify-content: space-between;
+  }
+  
+  header{
+    display: grid;
     grid-area: header;
     background-color: #ffffff;
-
+    align-items: center;
 
 }
-aside{
-    grid-area: aside;
+.left{
+     display: grid;
+    grid-area: left;
     background-color: #f2f4f7;
+    width:100%;
 }
 main{
+    display: grid;
     grid-area: main;
+    align-items: center;
+    padding-top: 10px;
+    margin: 0px;
 }
-footer{
-    grid-area: footer;
+.right{
+    display: grid;
+    grid-area: right;
+    width: 100%;
 }
 .container header .logo img{
     border-radius: 50%;
+    margin-left: 10px;
 }
 .max-container{
     display: flex;
@@ -35,11 +57,9 @@ footer{
     border: 1px solid #f2f4f7;
     padding: 10px;
     border-radius: 50px;
-    width: 32%;
+    width: 200px;
     background-color: #f2f4f7;
-    
-
-
+    gap: 5px;
 }
 .input-box input{
     border: none;
@@ -87,85 +107,209 @@ footer{
     border-radius: 50%;
 
 }
-aside{
+.left{
     background-color:#f2f2f2 ;
+    gap: 10px;
 }
 .aside-container{
-    
+    justify-content: center;
     align-items: center;
+    margin: 10px;
+    
+    
 }
+
 .aside-container img {
     border-radius: 50%;
     height: 36px;
     width: 36px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    
 }
 .aside-container .profile{
     display: flex;
     align-items: center;
+    gap: 5px;
 }
 .aside-container .meta{
     display: flex;
     align-items: center;
+    gap: 5px;
+
 }
 .aside-container .friend{
     display: flex;
     align-items: center;
+    gap: 5px;
+
 }
 .aside-container .memories{
     display: flex;
     align-items: center;
+    gap: 5px;
+
 }
 .aside-container .saved{
     display: flex;
     align-items: center;
+    gap: 5px;
+
 
 }
 .aside-container .groups{
     display: flex;
     align-items: center;
+    gap: 5px;
+
 }
 .aside-container .video{
     display: flex;
     align-items: center;
+    gap: 5px;
+
 }
 .aside-container .market{
     display: flex;
     align-items: center;
+    gap: 5px;
+
 }
 .aside-container .feed{
     display: flex;
     align-items: center;
+    gap: 5px;
+
 }
 .aside-container .event{
     display: flex;
     align-items: center;
+    gap: 5px;
+
 }
 .aside-container .manager{
     display: flex;
     align-items: center;
+    gap: 5px;
+
 }
 .aside-container .see{
     display: flex;
     
     align-items: center;
+    gap: 5px;
+
 }
 .aside-container .see svg{
     background-color: lightgray;
     border-radius: 50%;
 }
 main{
+    grid-area: main;
     display: flex;
+    flex-direction: column;
     align-items: center;
+
+    width: 100%;
+    /* height: 100vh; */
+    flex-shrink: 0;
+    
+    
 }
 
 .box{
-    border: 1px solid black;
-    height: 150px;
-    width: 250px;
-    background-color: #f2f2f2;
+    border: 1px solid #f2f4f7;
+    box-shadow: 2px #f2f4f7 ;
+    height: max-content;
+    width: 100%;
+    background-color:#ffffff;
+    padding: 10px;
+    align-items: center;
+    border-radius: 10px;
+    margin-right: 0px;
+
+}
+hr{
+    border:1px solid #f2f4f7 ;
+}
+.inner{
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    
+    
+}
+.inner input{
+    border: 1px solid #f2f4f7;
+    background-color: #f2f4f7;
+    border-radius: 50px;
+    padding: 5px;
+    width: 100%;
+}
+.inner img{
+    border-radius: 50%;
+}
+.down{
     display: flex;
     align-items: center;
+    gap: 30px;
 }
+.live-vid{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    transform: translate(5px);
+}
+.photo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    transform: translate(5px);
+}
+.activity{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    transform: translate(5px);
+}
+.all-card{
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    
+}
+.card{
+    align-items: center;
+    
+    padding: 10px;
+    border: 1px solid #ffffff;
+    height: max-content;
+    width: max-content;
+}
+.plus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 40px;
+    background-color: #075ce5;
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    color: white;
+  }
+  .spns{
+    display: flex;
+    flex-direction: column;
+  }
+  .spons{
+    display: flex;
+  }
+  .spons img{
+    position: relative;
+    left: 0px;
+  }
